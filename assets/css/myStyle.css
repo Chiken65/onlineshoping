@@ -1,0 +1,167 @@
+/* Raleway Font Start */
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+/* Raleway Font End */
+
+
+/* Header Css Starts Here */
+
+@media (min-width: 768px) {
+    .navbar {
+        //background-color: #fff;
+        //border-color: transparent;
+        height: 100px;
+    }
+    .navbar .container-fluid {
+        padding-right: 115px;
+        padding-left: 115px;
+        height: 100px;
+    }
+    .navbar-collapse {
+        padding-top: 25px;
+    }
+    .navbar-default .navbar-nav>li>a:hover{
+        color :#ff4c4c;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        //background-color: #fff;
+        //border-color: transparent;
+        height: 100px;
+        z-index: 999;
+    }
+    .navbar .container-fluid {
+        height: 100px;
+    }
+    .navbar-collapse {
+        padding-top: 25px;
+    }
+    .navbar-header {
+        padding-bottom: 50px;
+    }
+    .navbar-toggle {
+        margin-top: 30px;
+    }
+    .navbar-collapse, .navbar-header {
+        background-color: #f8f8f8;
+    }
+    .navbar-default .navbar-nav>li>a:hover{
+        color :#ff4c4c;
+    }
+    
+}
+
+
+/* Header Css Ends Here */
+
+
+/* Blood-Tips CSS Starts */
+
+.panel-title {
+    color: #9F190C;
+}
+
+.panel-group a {
+    text-decoration: none;
+}
+
+.nav-tabs>li>a {
+    color: #9F190C;
+}
+
+
+/* Blood-Tips CSS Ends */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    padding-top: 150px;
+    min-height: 300px;
+}
+
+.container-rXd {
+    padding-top: 150px;
+    min-height: 300px;
+}
+
+h3 {
+    color: #9F190C;
+}
+
+
+/* Index.php CSS*/
+
+.carousel {
+    padding-top: 100px;
+}
+
+.frontBlood {
+    width: 100%;
+    background-color: #e5e5e5;
+    float: left;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.frontBlood h4 {
+    color: #9F190C;
+    text-align: center;
+}
+
+.frontBlood .frontContent {
+    overflow-y: auto;
+    max-height: 250px;
+}
+
+
+/* Index.php CSS*/
+
+
+
+
+/*Scroll Bar*/
+
+ ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Scroll Bar*/
