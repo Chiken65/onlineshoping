@@ -49,14 +49,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Blood_blank';
+$route['default_controller'] = 'Online_shoping';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
 
 // routes
-$route['home'] = 'Blood_blank/index';
+$route['home'] = 'Online_shoping/index';
+$route['registrationPage'] = 'Online_shoping/registrationPage';
+$route['registerUserInfo'] = 'Online_shoping/registerUserInfo';
+
+
+
 $route['login'] = 'Blood_blank/login';
 $route['login_check'] = 'Blood_blank/login_check';
 $route['request_sample'] = 'Blood_blank/request_sample';

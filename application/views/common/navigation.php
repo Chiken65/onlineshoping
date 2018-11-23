@@ -58,61 +58,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
               </button>
-              <h1>Blood Bank System</h1>
+              <h1>Online Shoping</h1>
         <!-- <a class="navbar-brand" href="#"><img src="Images/IS-bbs-new.png" class="img-rounded" width=200px;></a> -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
          
     <ul class="nav navbar-nav navbar-right">
     <li><a href="<?php echo base_url().'home.html';?>">Home</a></li>
-    <li><a href="<?php echo base_url().'availableBlood.html';?>">Available Blood</a></li>
-    <li<?php if($user_type!='receiver')?>><a href="#" id="regModal">Register</a></li>
+    <li><a href="<?php echo base_url().'availableBlood.html';?>">Available Items</a></li>
+    <li><a href="<?php echo base_url().'registrationPage.html';?>" id="regModal">Register</a></li>
     <li><a href="<?php echo base_url().'login.html';?>">Login</a></li>
 
-    <!-- <li><a href="#" id="regModal">Register</a></li> -->
 </ul>
     </div>
 </div>
 </nav>
 
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModalReg" role="dialog">
-<div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-        <div class="modal-header-register" style="padding:1px 50px;">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4><span class="glyphicon glyphicon-pencil"></span> Register As</h4>
-            
-        </div>
-        <div class="modal-body" style="padding:2px 50px; color:#7e7e7d;">
-            <div class="col-sm-6" style="text-align:center;">
-                <a href="<?php echo base_url().'regReceiver.html';?>"><span class="glyphicon glyphicon-user" style="font-size:50px;"></span><br>Receiver</a>
-
-            </div>
-            <div class="col-sm-6" style="text-align:center;">
-                <a href="<?php echo base_url().'regHospital.html';?>"><span class="glyphicon glyphicon-home" style="font-size:50px;"></span><br>Hospital</a>
-            </div>
-
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-
-<script>
-$(document).ready(function() {
-    $("#regModal").click(function() {
-        $("#myModalReg").modal();
-    });
-});
-
-</script>
 
 <div class="modal fade" id="myModalLogin" role="dialog">
 <div class="modal-dialog">

@@ -9,6 +9,28 @@ class Site_model extends CI_Model
         $this->load->database();
     }
 
+
+    function registerUserInfo($value)
+    {
+        $email = $value['email'];
+        $pass = $value['pass'];
+        $password = md5($pass);
+        $name = $value['name'];
+        $type = $value['type'];
+        $phone_no = $value['phone_no'];
+        $dob = $value['dob'];
+        $gender = $value['type'];
+        $address = $value['add'];
+
+        $query = "INSERT INTO users(email, password, name, type, phone_no, gender, address, dob) VALUES ('$email', '$password', '$name', '$type', '$phone_no', '$gender', '$address','$dob')";
+        return $this->db->query($query);
+        
+    }
+
+
+
+
+
     function login_check($value)
     {
          $this->db->where('email', $value['email']);

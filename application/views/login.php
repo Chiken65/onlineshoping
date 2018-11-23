@@ -1,11 +1,11 @@
 <html lang="en">
 
 <head>
-    <title>Hospital Registration | Blood Bank System</title>
+    <title>Hospital Registration | Online Shoping</title>
     <link rel="icon" href="Images/title-icon.png" type="image/png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blood Bank System">
+    <meta name="description" content="Online Shoping">
     <meta name="author" content="Ravi Shankar Dubey">
     <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
     <script src="bootstrap-3.3.7/jquery-3.1.1.js"></script>

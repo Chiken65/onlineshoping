@@ -42,7 +42,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
               </button>
-              <h1>Blood Bank System</h1>
+              <h1>Online Shoping</h1>
         <!-- <a class="navbar-brand" href="#"><img src="Images/IS-bbs-new.png" class="img-rounded" width=200px;></a> -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">

@@ -1,55 +1,33 @@
 <script type="text/javascript" language="javascript">
-    
-        if (localStorage.getItem('type')  != 'receiver' && localStorage.getItem('type')  != 'hospital') {
+	if (localStorage.getItem('type')  != 'receiver' && localStorage.getItem('type')  != 'hospital') {
         document.cookie = "user_type = a " 
     } else {
         document.cookie = "user_type = " + localStorage.getItem('type') 
     }
     document.cookie = "user_email = " + localStorage.getItem('user_email') 
 	document.cookie = "password = " + localStorage.getItem('password') 
+</script>
 
-   
-
-
-    </script>
-    <script>
-            <?php
+<script>
+	<?php
         $user_type= $_COOKIE['user_type'];
 		$user_email= $_COOKIE['user_email'];
-		$password= $_COOKIE['password'];
- 		
+		$password= $_COOKIE['password'];	
     ?> 
 </script>
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Blood_blank extends CI_Controller {
-
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
+class Online_shoping extends CI_Controller {
 
     public function __construct()
     {
         parent::__construct();
         $this->load->library("form_validation");
 		$this->load->helper('form');
-		$this->load->library('session');
-		
-		$this->load->helper('cookie');
-		
+		$this->load->library('session');		
+		$this->load->helper('cookie');		
 	}
 	
     public function __destruct() {  
@@ -62,6 +40,21 @@ class Blood_blank extends CI_Controller {
 		$this->load->view('common/navigation');
 		$this->load->view('index');
 	}
+
+	// to open registration page
+	public function registrationPage() {
+		$this->load->view('common/header');
+		$this->load->view('common/navigation');
+		$this->load->view('registrationPage');
+	}
+
+
+
+
+
+
+
+
 
 	public function viewRequest()
 	{
@@ -170,6 +163,33 @@ class Blood_blank extends CI_Controller {
 		$this->load->view('common/navigation');
 		$this->load->view('regHospital');
 	}
+
+	public function registerUserInfo() {
+		$demo['email'] = $this->input->post('email');
+		$demo['pass'] = $this->input->post('pass');
+		$demo['name'] = $this->input->post('name');
+		$demo['phone_no'] = $this->input->post('phone_no');
+		$demo['dob'] = $this->input->post('dob');
+		$demo['add'] = $this->input->post('add');
+		$demo['type'] = $this->input->post('type');
+		$demo['d'] = $this->input->post(date("y-m-d H:i:s"));
+ 		$check = $this->sitedata->registerUserInfo($demo);
+		if ($check) {
+			$this->session->set_flashdata('msg1', '<div class="alert alert-success text-center">Added Successfll</div>');		
+			
+			
+		$this->load->view('common/header');
+		$this->load->view('common/navigation');
+		$this->load->view('login');
+			} else {
+				$this->session->set_flashdata('msg1', '<div class="alert alert-danger text-center">Duplicate entry of email</div>');
+				$this->load->view('common/header');
+				$this->load->view('common/navigation');
+				$this->load->view('regHospital');
+					}
+
+	}
+	
 	public function availableBlood()
 	{
 		$data['availableBlood'] = $this->sitedata->availableBlood(); 
