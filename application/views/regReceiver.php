@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Online Shoping">
     <meta name="author" content="Ravi Shankar Dubey">
-    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
-    <script src="bootstrap-3.3.7/jquery-3.1.1.js"></script>
-    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="<?php echo base_url() . 'assets/bootstrap-3.3.7/css/bootstrap.min.css' ?>">
+    <script src="<?php echo base_url() . 'assets/bootstrap-3.3.7/jquery-3.1.1.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/bootstrap-3.3.7/js/bootstrap.min.js' ?>"></script>
+    <link rel="stylesheet" href="<?php echo base_url() . 'assets/css/myStyle.css' ?>">
     <script>
         $(document).ready(function() {
             var dtToday = new Date();
@@ -35,7 +35,7 @@
         <div class="container">
         <div class="col-sm-9">
             <h2>Register as a Blood Receiver</h2>
-            <form action="<?php echo base_url().'receiver_data.html'?>" method="post">   
+            <form action="<?php echo base_url() . 'receiver_data.html' ?>" method="post">   
                          <div class="panel-group">
                     <div class="panel panel-primary">
                         <div class="panel-heading">Login Information</div>

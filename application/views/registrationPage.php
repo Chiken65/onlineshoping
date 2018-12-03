@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Online Shoping">
     <meta name="author" content="Ravi Shankar Dubey">
-    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
-    <script src="bootstrap-3.3.7/jquery-3.1.1.js"></script>
-    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="<?php echo base_url() . 'assets/bootstrap-3.3.7/css/bootstrap.min.css' ?>">
+    <script src="<?php echo base_url() . 'assets/bootstrap-3.3.7/jquery-3.1.1.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/bootstrap-3.3.7/js/bootstrap.min.js' ?>"></script>
+    <link rel="stylesheet" href="<?php echo base_url() . 'assets/css/myStyle.css' ?>">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
             <?php echo $this->session->flashdata('msg1'); ?> 
 
  
-            <form action="<?php echo base_url().'registerUserInfo.html'?>" method="post">   
+            <form action="<?php echo base_url() . 'registerUserInfo.html' ?>" method="post">   
             <div class="panel-group">
                 <div class="panel panel-primary">
                     <div class="panel-heading">Login Information</div>

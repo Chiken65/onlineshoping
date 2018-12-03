@@ -57,13 +57,14 @@ $route['translate_uri_dashes'] = FALSE;
 
 // routes
 $route['home'] = 'Online_shoping/index';
+$route['login'] = 'Online_shoping/login';
+$route['login_check'] = 'Online_shoping/login_check';
 $route['registrationPage'] = 'Online_shoping/registrationPage';
 $route['registerUserInfo'] = 'Online_shoping/registerUserInfo';
+$route['availableItems'] = 'Online_shoping/availableItems';
 
 
 
-$route['login'] = 'Blood_blank/login';
-$route['login_check'] = 'Blood_blank/login_check';
 $route['request_sample'] = 'Blood_blank/request_sample';
 $route['availableBlood'] = 'Blood_blank/availableBlood';
 $route['regReceiver'] = 'Blood_blank/regReceiver';

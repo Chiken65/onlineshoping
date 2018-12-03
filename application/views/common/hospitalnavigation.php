@@ -52,7 +52,7 @@
      <li><a href="<?php echo base_url().'viewRequest.html';?>">Blood Requests<span class="badge"><?php echo $count;?>
 </span></a></li>
 
-    <li><a href="<?php echo base_url().'availableBlood.html';?>">Available Blood</a></li>
+    <li><a href="<?php echo base_url().'availableItems.html';?>">Available Blood</a></li>
      <li><a href="<?php echo base_url().'login.html';?>">logout</a></li>
      
      <!-- <li><a href="#" id="regModal">Register</a></li> -->

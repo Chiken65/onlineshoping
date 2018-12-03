@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Online Shoping">
     <meta name="author" content="Ravi Shankar Dubey">
-    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
-    <script src="bootstrap-3.3.7/jquery-3.1.1.js"></script>
-    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="<?php echo base_url() . 'assets/bootstrap-3.3.7/css/bootstrap.min.css' ?>">
+    <script src="<?php echo base_url() . 'assets/bootstrap-3.3.7/jquery-3.1.1.js' ?>"></script>
+    <script src="<?php echo base_url() . 'assets/bootstrap-3.3.7/js/bootstrap.min.js' ?>"></script>
+    <link rel="stylesheet" href="<?php echo base_url() . 'assets/css/myStyle.css' ?>">
 </head>
 
 
@@ -28,7 +28,7 @@
  <div class="row main">
 
    <div class="main-login main-center">
-   <form action="<?php echo base_url().'login_check.html'?>" method="post">   
+   <form action="<?php echo base_url() . 'login_check.html' ?>" method="post">   
    <div class="form-group">
    <h4><span class="glyphicon glyphicon-log-in"></span> Login</h4>
 
@@ -37,7 +37,7 @@
            <div class="input-group">
              <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
              <input type="email" class="form-control inputEmail" name="email" placeholder="Email" data-error="That email address is invalid" required="" value="">
-             <?php echo form_error('email','<span class="help-block">','</span>'); ?>            </div>
+             <?php echo form_error('email', '<span class="help-block">', '</span>'); ?>            </div>
          </div>
        </div>
 
@@ -48,7 +48,7 @@
              <span class="input-group-addon"><i class="glyphicon glyphicon-lock " aria-hidden="true"></i></span>
              <input type="password" class="form-control inputPassword" name="password" placeholder="Password" required="">
              </div>
-             <?php echo form_error('password','<span class="help-block">','</span>'); ?>
+             <?php echo form_error('password', '<span class="help-block">', '</span>'); ?>
                <?php echo $this->session->flashdata('msg'); ?>           
                
          </div>

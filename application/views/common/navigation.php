@@ -58,14 +58,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> 
               </button>
-              <h1>Online Shoping</h1>
+              <!-- <h1>Online Shopping</h1> -->
+              <h1>HRMS</h1>
         <!-- <a class="navbar-brand" href="#"><img src="Images/IS-bbs-new.png" class="img-rounded" width=200px;></a> -->
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
          
     <ul class="nav navbar-nav navbar-right">
     <li><a href="<?php echo base_url().'home.html';?>">Home</a></li>
-    <li><a href="<?php echo base_url().'availableBlood.html';?>">Available Items</a></li>
+    <li><a href="<?php echo base_url().'availableItems.html';?>">Available Items</a></li>
     <li><a href="<?php echo base_url().'registrationPage.html';?>" id="regModal">Register</a></li>
     <li><a href="<?php echo base_url().'login.html';?>">Login</a></li>
 
